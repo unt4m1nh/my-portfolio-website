@@ -23,15 +23,20 @@
     flex-direction: row;
     align-items: center;
     gap: 30px;
+    margin-bottom: 79px;
 }
 
 .rounded-button {
     width: 30px;
     height: 30px;
-    border-radius: 54px;
-    border: 1px solid var(--grey);
+    margin: 45px 45px 0px 0px;
     display: flex;
     justify-content: center;
     align-items: center;
     color: var(--grey);
+}
+
+.rounded-button :hover {
+    width: 45px;
+    height: 45px;
 }
