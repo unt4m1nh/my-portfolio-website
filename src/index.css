@@ -1,0 +1,28 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'IBM Plex Mono', monospace;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--black);
+}
+
+img {
+  max-width: 100%;
+  width: 100%;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+:root {
+  --light-b: #1B1B1B;
+  --black: #080808;
+  --green: #3F8E00;
+  --green-l: #62BA1B;
+  --grey:#9C9C9C;
+  --orange: #FFA217;
+  --neon-blue: #000AFF;
+  --mint-green: #2AB090;
+}

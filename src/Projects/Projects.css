@@ -1,0 +1,37 @@
+*,
+*:before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.projects-container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    gap: 80px
+}
+
+.projects-list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+}
+
+.rounded-button {
+    width: 30px;
+    height: 30px;
+    border-radius: 54px;
+    border: 1px solid var(--grey);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--grey);
+}

@@ -1,0 +1,31 @@
+.btn {
+    font-family: 'IBM Plex Mono';
+    position: relative;
+    font-weight: 400;
+    font-size: 1.3rem;
+    transition: all 200ms linear;
+    border-radius: 4px;
+    letter-spacing: 1px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    outline: 0;
+    margin-top: 30px;
+}
+
+.partnership {
+    position: relative;
+    width: 160px;
+    height: 60px;
+    border-radius: 6px;
+    border: 1px solid #1B1B1B;
+    display: flex;
+    justify-content: center;
+}
+
+.partnership img {
+    max-width: fit-content ;
+    max-height: 60px;
+}

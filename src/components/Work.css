@@ -1,0 +1,32 @@
+.work-container {
+    width: 445px;
+    height: 494px;
+    display: flex;
+    flex-direction: column;
+}
+
+.work-container h2 {
+    margin-top: 40px;
+}
+
+.work-container p {
+    margin-top: 20px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    /* 171.429% */
+    letter-spacing: 0.14px;
+}
+
+.img-container {
+    width: 450px;
+    height: 300px;
+}
+
+.img-container img {
+    max-width: inherit;
+    max-height: inherit;
+    height: 100%;
+    border-radius: 6px;
+}

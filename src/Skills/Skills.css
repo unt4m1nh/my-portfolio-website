@@ -1,0 +1,78 @@
+*,
+*:before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.skills-container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    gap: 80px
+}
+
+.heading {
+    position: relative;
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+}
+
+.heading p {
+    max-width: 570px;
+    text-align: center;
+    font-family: IBM Plex Mono;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    /* 171.429% */
+    letter-spacing: 0.14px;
+    margin-top: 10px;
+}
+
+.work {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 892px;
+    height: 300px;
+    gap: 30px;
+}
+
+.work-info {
+    max-width: 446px;
+}
+
+.work-img {
+    width: 445px;
+    height: 300px;
+}
+
+.work-description {
+    padding: 0;
+    margin-top: 10px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    /* 171.429% */
+    letter-spacing: 0.14px;
+}
+
+.work-img img {
+    max-width: inherit;
+    max-height: inherit;
+    border-radius: 6px;
+}
