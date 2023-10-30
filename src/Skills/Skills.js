@@ -12,14 +12,15 @@ function Skills() {
             <div className="heading">
                 <h1>My Skills</h1>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse arcu magna, tincidunt quis sagittis bibendum, scelerisque in turpis. Sed eu arcu odio. Maecenas semper eleifend odio, nec venenatis quam volutpat eu. Cras interdum tortor erat, sed pretium massa fringilla vel. Cras eget nisl laoreet nulla venenatis condimentum nec a neque
+                    Building websites, web applications and more ...
                 </p>
             </div>
             <div className="work">
                 <div className="work-info">
-                    <h2>Work name here</h2>
+                    <h2>Developing Website</h2>
                     <p className="work-description">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse arcu magna, tincidunt quis sagittis bibendum, scelerisque in turpis. Sed eu arcu odio. Maecenas semper eleifend odio, nec venenatis quam volutpat eu. Cras interdum tortor erat, sed pretium massa fringilla vel. Cras eget nisl laoreet nulla venenatis condimentum nec a neque
+                        Manage to use various kind of frameworks for full-stack
+                        development: React, Nodejs, Express
                     </p>
                 </div>
                 <div className="work-img">
@@ -31,17 +32,17 @@ function Skills() {
                     <img src={mobile} alt="work-img"></img>
                 </div>
                 <div className="work-info">
-                    <h2>Work name here</h2>
+                    <h2>Developing mobile applications</h2>
                     <p className="work-description">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse arcu magna, tincidunt quis sagittis bibendum, scelerisque in turpis. Sed eu arcu odio. Maecenas semper eleifend odio, nec venenatis quam volutpat eu. Cras interdum tortor erat, sed pretium massa fringilla vel. Cras eget nisl laoreet nulla venenatis condimentum nec a neque
+                        Developing Mobile Apps based on React Native / Android Java
                     </p>
                 </div>
             </div>
             <div className="work">
                 <div className="work-info">
-                    <h2>Work name here</h2>
+                    <h2>Designing database</h2>
                     <p className="work-description">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse arcu magna, tincidunt quis sagittis bibendum, scelerisque in turpis. Sed eu arcu odio. Maecenas semper eleifend odio, nec venenatis quam volutpat eu. Cras interdum tortor erat, sed pretium massa fringilla vel. Cras eget nisl laoreet nulla venenatis condimentum nec a neque
+                        Design SQL / Non-SQL databases for storing users data.
                     </p>
                 </div>
                 <div className="work-img">

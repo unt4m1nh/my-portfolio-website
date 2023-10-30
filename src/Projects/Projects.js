@@ -19,9 +19,6 @@ function Projects() {
         <div className="projects-container">
             <div className="heading">
                 <h1>Projects</h1>
-                <p>
-                    Solving user & business problems since last 15+ years.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </p>
             </div>
             <div className="projects-list">
                 <div class="rounded-button"
