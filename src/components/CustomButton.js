@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import './CustomButton.css'
 
-const CustomButton = ({ size, type, variant, className, id, onclick, children }) => {
+const CustomButton = ({ size, type, variant, className, id, onClick, children }) => {
 
     const ButtonComponent = styled.button`
         font-size: 16px;
@@ -21,12 +21,12 @@ const CustomButton = ({ size, type, variant, className, id, onclick, children })
 
     return (
         <ButtonComponent
-            size={size}
             type={type ? type : "button"}
             variant={variant}
+            size={size}
             id={id}
-            onclick={onclick}
-            className="btn"
+            onClick={onClick}
+            className={className ? `btn ${className}` : "btn"}
         >
             {children}
         </ButtonComponent>

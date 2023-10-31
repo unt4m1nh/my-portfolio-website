@@ -9,6 +9,10 @@ const Work = (props) => {
     const workDescription = props.workDescription
     const workImageUrl = props.workImageUrl
 
+    const testClicked = () => {
+        alert(1);
+    }
+
     return (
         <div className="work-container">
             <div className="img-container">
@@ -16,7 +20,7 @@ const Work = (props) => {
             </div>
             <h2>{workName}</h2>
             <p>{workDescription}</p>
-            <CustomButton variant="common" >Know more</CustomButton>
+            <CustomButton variant="common" onclick={testClicked}>Know more</CustomButton>
         </div>
     )
 }

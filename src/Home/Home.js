@@ -13,7 +13,8 @@ import avatar from "../img/Unta.jpeg"
 import fptLogo from "../img/FPT Logo.png"
 import samsungLogo from "../img/Samsung-Logo.png"
 
-function Home () {
+function Home() {
+    console.log('Hello')
     return (
         <div className="container">
             <div className="navbar">
@@ -24,24 +25,29 @@ function Home () {
                     <li>Contact me</li>
                 </ul>
                 <div className="social-icons">
-                    <FontAwesomeIcon icon={faLinkedin} style={{color: '#9C9C9C' }} />
-                    <FontAwesomeIcon icon={faGithub} style={{color: '#9C9C9C'}} />
-                    <FontAwesomeIcon icon={faInstagram} style={{color: '#9C9C9C'}}/>
+                    <FontAwesomeIcon icon={faLinkedin} style={{ color: '#9C9C9C' }} />
+                    <FontAwesomeIcon icon={faGithub} style={{ color: '#9C9C9C' }} />
+                    <FontAwesomeIcon icon={faInstagram} style={{ color: '#9C9C9C' }} />
                 </div>
             </div>
             <div className="home-content">
                 <div className="description">
-                    <h1 style={{color: "#fff", marginBottom: "10px"}}>HOÀNG GIA MINH</h1>
+                    <h1 style={{ color: "#fff", marginBottom: "10px" }}>HOÀNG GIA MINH</h1>
                     <p>Full Stack Developer</p>
                     <p>Web Applications</p>
                     <p>Android Applications</p>
-                    <CustomButton size="large" variant="common" >Let's get started</CustomButton>
+                    <CustomButton
+                        variant="common"
+                        size="large"
+                        onClick={() => console.log('Button Clicked')}
+                    >Let's get started</CustomButton>
+                    <button onClick={() => console.log('Button On Clicked')}>Test</button>
                 </div>
                 <div className="avatar-container">
                     <img className="avatar" src={avatar} alt="Ava"></img>
                 </div>
                 <div className="bottom-container">
-                    <p style={{color: "#fff"}}>Worked with</p>
+                    <p style={{ color: "#fff" }}>Worked with</p>
                     <div className="list-partnership">
                         <Partnership url={fptLogo}></Partnership>
                         <Partnership url={samsungLogo}></Partnership>

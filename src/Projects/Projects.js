@@ -12,7 +12,7 @@ import Work from "../components/Work";
 import { workData } from "./data";
 
 function Projects() {
-    
+
     const [currentIndex, setCurrentIndex] = useState(0);
 
     return (
@@ -23,19 +23,23 @@ function Projects() {
             <div className="projects-list">
                 <div class="rounded-button"
                     onClick={() => {
-                        if(currentIndex > 0) {
-                            setCurrentIndex(currentIndex-1);
+                        if (currentIndex > 0) {
+                            setCurrentIndex(currentIndex - 1);
                         }
                     }}
                 >
                     <FontAwesomeIcon icon={faChevronLeft} />
                 </div>
-                <Work workName={workData[currentIndex].workName} workDescription={workData[currentIndex].workDescription} workImageUrl={workData[currentIndex].workImageUrl} />
-                <Work workName={workData[currentIndex+1].workName} workDescription={workData[currentIndex+1].workDescription} workImageUrl={workData[currentIndex+1].workImageUrl} />
+                <Work
+                    workName={workData[currentIndex].workName}
+                    workDescription={workData[currentIndex].workDescription}
+                    workImageUrl={workData[currentIndex].workImageUrl} 
+                />
+                <Work workName={workData[currentIndex + 1].workName} workDescription={workData[currentIndex + 1].workDescription} workImageUrl={workData[currentIndex + 1].workImageUrl} />
                 <div class="rounded-button"
-                     onClick={() => {
-                        if(currentIndex < 2) {
-                            setCurrentIndex(currentIndex+1);
+                    onClick={() => {
+                        if (currentIndex < 2) {
+                            setCurrentIndex(currentIndex + 1);
                         }
                     }}
                 >
