@@ -3,7 +3,6 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, 'IBM Plex Mono', monospace;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: var(--black);
 }
 
 img {

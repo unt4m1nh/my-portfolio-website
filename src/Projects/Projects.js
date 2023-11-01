@@ -33,9 +33,15 @@ function Projects() {
                 <Work
                     workName={workData[currentIndex].workName}
                     workDescription={workData[currentIndex].workDescription}
-                    workImageUrl={workData[currentIndex].workImageUrl} 
+                    workImageUrl={workData[currentIndex].workImageUrl}
+                    githubUrl={workData[currentIndex].githubUrl}
                 />
-                <Work workName={workData[currentIndex + 1].workName} workDescription={workData[currentIndex + 1].workDescription} workImageUrl={workData[currentIndex + 1].workImageUrl} />
+                <Work
+                    workName={workData[currentIndex + 1].workName}
+                    workDescription={workData[currentIndex + 1].workDescription}
+                    workImageUrl={workData[currentIndex + 1].workImageUrl}
+                    githubUrl={workData[currentIndex + 1].githubUrl}
+                />
                 <div class="rounded-button"
                     onClick={() => {
                         if (currentIndex < 2) {

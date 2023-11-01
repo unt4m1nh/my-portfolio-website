@@ -8,9 +8,12 @@ const Work = (props) => {
     const workName = props.workName
     const workDescription = props.workDescription
     const workImageUrl = props.workImageUrl
+    const githubUrl = props.githubUrl
 
-    const testClicked = () => {
-        alert(1);
+    const navigateToLink = () => {
+        var link = githubUrl;
+
+        window.location.href = link;
     }
 
     return (
@@ -20,7 +23,7 @@ const Work = (props) => {
             </div>
             <h2>{workName}</h2>
             <p>{workDescription}</p>
-            <CustomButton variant="common" onclick={testClicked}>Know more</CustomButton>
+            <CustomButton variant="common" onClick={navigateToLink}>Know more</CustomButton>
         </div>
     )
 }
