@@ -10,7 +10,7 @@ function Contact() {
             <div className="heading">
                 <h1>Get in touch</h1>
                 <p>
-                    Send me your thoughs or requirements 
+                    Send me your thoughts or requirements 
                 </p>
             </div>
             <form className="contact-form">

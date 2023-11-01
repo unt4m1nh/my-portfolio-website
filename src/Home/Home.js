@@ -10,7 +10,7 @@ import samsungLogo from "../img/Samsung-Logo.png"
 
 function Home() {
     return (
-        <div className="container">
+        <div className="home-container">
             <div className="home-content">
                 <div className="description">
                     <h1 style={{ color: "#fff", marginBottom: "10px" }}>HOÀNG GIA MINH</h1>
