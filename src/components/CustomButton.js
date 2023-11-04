@@ -17,6 +17,10 @@ const CustomButton = ({ size, type, variant, className, id, onClick, children })
             props.size === "large" ? "307px" : 
             props.size === "default" ? "190px" : "190px"};
         height: ${(props) => props.size === "large" || props.size === "extra" ? "63px" : props.size === "default" ? "38px" : "38px"};
+        &:hover {
+            background-color: ${(props) => props.variant === "common" ? "#fff" : props.variant === "default" ? "#fff" : "#fff"};
+            color: ${(props) => props.variant === "common" ? "#3F8E00" : props.variant === "default" ? "#ffffff" : "#ffffff"};
+        }
     `;
 
     return (
