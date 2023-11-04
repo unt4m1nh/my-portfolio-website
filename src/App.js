@@ -21,30 +21,30 @@ function App() {
             <div className="navbar">
                 <ul className="navbar--list">
                     <li><Link className="routes"
-                        onClick={() => {setCurPage('Home')}}
+                        onClick={() => { setCurPage('Home') }}
                         style={{
                             textDecoration: curPage === 'Home' ? 'underline' : 'none',
                             color: curPage === 'Home' ? '#fff' : '#9C9C9C',
                             fontSize: curPage === 'Home' ? 18 : 14
                         }} to="/">Home</Link></li>
                     <li><Link className="routes"
-                        onClick={() => {setCurPage('Skills')}}
-                        style={{ 
-                            textDecoration: curPage === 'Skills' ? 'underline' : 'none', 
+                        onClick={() => { setCurPage('Skills') }}
+                        style={{
+                            textDecoration: curPage === 'Skills' ? 'underline' : 'none',
                             color: curPage === 'Skills' ? '#fff' : '#9C9C9C',
                             fontSize: curPage === 'Skills' ? 18 : 14
                         }} to="/skill">Skills</Link></li>
                     <li><Link className="routes"
-                        onClick={() => {setCurPage('Projects')}}
+                        onClick={() => { setCurPage('Projects') }}
                         style={{
-                            textDecoration: curPage === 'Projects' ? 'underline' : 'none', 
+                            textDecoration: curPage === 'Projects' ? 'underline' : 'none',
                             color: curPage === 'Projects' ? '#fff' : '#9C9C9C',
                             fontSize: curPage === 'Projects' ? 18 : 14
                         }} to="/project">Projects</Link></li>
                     <li><Link className="routes"
-                        onClick={() => {setCurPage('Contact')}}
+                        onClick={() => { setCurPage('Contact') }}
                         style={{
-                            textDecoration: curPage === 'Contact' ? 'underline' : 'none', 
+                            textDecoration: curPage === 'Contact' ? 'underline' : 'none',
                             color: curPage === 'Contact' ? '#fff' : '#9C9C9C',
                             fontSize: curPage === 'Contact' ? 18 : 14
                         }} to="/contact">Contact</Link></li>
@@ -55,7 +55,6 @@ function App() {
                     <a href="https://github.com/unt4m1nh"><FontAwesomeIcon icon={faInstagram} style={{ color: '#9C9C9C' }} /></a>
                 </div>
             </div>
-
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/skill" element={<Skills />} />
