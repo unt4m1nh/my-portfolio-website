@@ -31,12 +31,14 @@ function Projects() {
                     <FontAwesomeIcon icon={faChevronLeft} />
                 </div>
                 <Work
+                    id="work1"
                     workName={workData[currentIndex].workName}
                     workDescription={workData[currentIndex].workDescription}
                     workImageUrl={workData[currentIndex].workImageUrl}
                     githubUrl={workData[currentIndex].githubUrl}
                 />
                 <Work
+                    id="work2"
                     workName={workData[currentIndex + 1].workName}
                     workDescription={workData[currentIndex + 1].workDescription}
                     workImageUrl={workData[currentIndex + 1].workImageUrl}

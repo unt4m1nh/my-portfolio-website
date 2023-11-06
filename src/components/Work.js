@@ -9,7 +9,7 @@ const Work = (props) => {
     const workDescription = props.workDescription
     const workImageUrl = props.workImageUrl
     const githubUrl = props.githubUrl
-
+    const id = props.id
     const navigateToLink = () => {
         var link = githubUrl;
 
@@ -17,7 +17,7 @@ const Work = (props) => {
     }
 
     return (
-        <div className="work-container">
+        <div className="work-container" id={id}>
             <div className="img-container">
                 <img src={workImageUrl} alt="work-img"></img>
             </div>
