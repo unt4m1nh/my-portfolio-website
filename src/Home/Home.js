@@ -8,6 +8,11 @@ import avatar from "../img/Unta.jpeg"
 import fptLogo from "../img/FPT Logo.png"
 import samsungLogo from "../img/Samsung-Logo.png"
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faInstagram } from "@fortawesome/free-brands-svg-icons";
+
 function Home() {
     return (
         <div className="home-container">
@@ -33,6 +38,20 @@ function Home() {
                         <Partnership url={samsungLogo}></Partnership>
                     </div>
                 </div>
+            </div>
+            <div className="home-content-mobile">
+                <p>My name is Minh</p>
+                <h1>I'm a Developer</h1>
+                <div className="social-icons">
+                    <a href="https://www.linkedin.com/in/minh-hoang-03b554223/"><FontAwesomeIcon icon={faLinkedin} size="2xl" style={{ color: '#fff' }} /></a>
+                    <a href="https://github.com/unt4m1nh"><FontAwesomeIcon icon={faGithub} size="2xl" style={{ color: '#fff' }} /></a>
+                    <a href="https://github.com/unt4m1nh"><FontAwesomeIcon icon={faInstagram} size="2xl" style={{ color: '#fff' }} /></a>
+                </div>
+                <CustomButton
+                    variant="common"
+                    size="large"
+                    onClick={() => console.log('Button Clicked')}
+                >Let's get started</CustomButton>
             </div>
         </div>
     )
