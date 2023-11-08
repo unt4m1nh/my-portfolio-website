@@ -12,8 +12,20 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faInstagram } from "@fortawesome/free-brands-svg-icons";
+import { Link } from "react-router-dom";
+
+import { useAppState } from "../AppProvider";
 
 function Home() {
+
+    const { updatePage } = useAppState();
+
+    const handleButtonClick = () => {
+        console.log('Button Clicked')
+        updatePage('Skills');
+    };
+
+
     return (
         <div className="home-container">
             <div className="home-content">
@@ -22,11 +34,16 @@ function Home() {
                     <p>Full Stack Developer</p>
                     <p>Web Applications</p>
                     <p>Android Applications</p>
-                    <CustomButton
-                        variant="common"
-                        size="large"
-                        onClick={() => console.log('Button Clicked')}
-                    >Let's get started</CustomButton>
+                    <Link
+                        //onClick={() => {}}
+                        to="/skill"
+                    >
+                        <CustomButton
+                            variant="common"
+                            size="large"
+                            onClick={handleButtonClick}
+                        >Let's get started</CustomButton>
+                    </Link>
                 </div>
                 <div className="avatar-container">
                     <img className="avatar" src={avatar} alt="Ava"></img>
@@ -47,11 +64,16 @@ function Home() {
                     <a href="https://github.com/unt4m1nh"><FontAwesomeIcon icon={faGithub} size="2xl" style={{ color: '#fff' }} /></a>
                     <a href="https://github.com/unt4m1nh"><FontAwesomeIcon icon={faInstagram} size="2xl" style={{ color: '#fff' }} /></a>
                 </div>
-                <CustomButton
-                    variant="common"
-                    size="large"
-                    onClick={() => console.log('Button Clicked')}
-                >Let's get started</CustomButton>
+                <Link
+                    //onClick={() => {}}
+                    to="/skill"
+                >
+                    <CustomButton
+                        variant="common"
+                        size="large"
+                        onClick={handleButtonClick}
+                    >Let's get started</CustomButton>
+                </Link>
             </div>
         </div>
     )
