@@ -23,32 +23,30 @@ function Projects() {
             <div className="projects-list">
                 <div class="rounded-button"
                     onClick={() => {
-                        if (currentIndex > 0) {
-                            setCurrentIndex(currentIndex - 1);
-                        }
+                        setCurrentIndex(currentIndex - 1)
                     }}
                 >
                     <FontAwesomeIcon icon={faChevronLeft} />
                 </div>
                 <Work
                     id="work1"
-                    workName={workData[currentIndex].workName}
-                    workDescription={workData[currentIndex].workDescription}
-                    workImageUrl={workData[currentIndex].workImageUrl}
-                    githubUrl={workData[currentIndex].githubUrl}
+                    workName={workData[currentIndex % 4].workName}
+                    workDescription={workData[currentIndex % 4].workDescription}
+                    workImageUrl={workData[currentIndex % 4].workImageUrl}
+                    githubUrl={workData[currentIndex % 4].githubUrl}
                 />
                 <Work
                     id="work2"
-                    workName={workData[currentIndex + 1].workName}
-                    workDescription={workData[currentIndex + 1].workDescription}
-                    workImageUrl={workData[currentIndex + 1].workImageUrl}
-                    githubUrl={workData[currentIndex + 1].githubUrl}
+                    workName={workData[(currentIndex + 1) % 4].workName}
+                    workDescription={workData[(currentIndex + 1) % 4].workDescription}
+                    workImageUrl={workData[(currentIndex + 1) % 4].workImageUrl}
+                    githubUrl={workData[(currentIndex + 1) % 4].githubUrl}
                 />
                 <div class="rounded-button"
                     onClick={() => {
-                        if (currentIndex < 2) {
-                            setCurrentIndex(currentIndex + 1);
-                        }
+
+                        setCurrentIndex(currentIndex + 1);
+
                     }}
                 >
                     <FontAwesomeIcon icon={faChevronRight} />
