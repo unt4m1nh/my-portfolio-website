@@ -18,12 +18,24 @@ const Work = (props) => {
 
     return (
         <div className="work-container" id={id}>
-            <div className="img-container">
-                <img src={workImageUrl} alt="work-img"></img>
+            <div className="content">
+                <div className="img-container">
+                    <img src={workImageUrl} alt="work-img"></img>
+                </div>
+                <h2>{workName}</h2>
+                <p>{workDescription}</p>
+                <CustomButton variant="common" onClick={navigateToLink}>Know more</CustomButton>
             </div>
-            <h2>{workName}</h2>
-            <p>{workDescription}</p>
-            <CustomButton variant="common" onClick={navigateToLink}>Know more</CustomButton>
+            <div className="content-mobile">
+                <div className="img-container">
+                    <img src={workImageUrl} alt="work-img"></img>
+                </div>
+                <div className="info">
+                    <h2>{workName}</h2>
+                    <p>{workDescription}</p>
+                    <CustomButton variant="common" onClick={navigateToLink}>Know more</CustomButton>
+                </div>
+            </div>
         </div>
     )
 }

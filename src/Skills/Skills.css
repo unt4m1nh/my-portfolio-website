@@ -30,7 +30,7 @@
     margin-top: 110px;
 }
 
-@media screen and (min-width: 749px) {
+@media screen and (min-width: 1280px) {
 
     .skills-container .content-mobile {
         display: none;
@@ -58,6 +58,75 @@
         height: 300px;
         gap: 30px;
         color: #fff ;
+        margin-top: 50px;
+    }
+    
+    .work-info {
+        max-width: 446px;
+    }
+    
+    .work-img {
+        width: 445px;
+        max-height: 250px;
+    }
+    
+    .work-description {
+        padding: 0;
+        margin-top: 10px;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        /* 171.429% */
+        letter-spacing: 0.14px;
+    }
+    
+    .work-img img {
+        max-width: inherit;
+        max-height: inherit;
+        border-radius: 6px;
+    }
+    
+    .frame-work {
+        display: flex;
+        gap: 20px;
+        margin-top: 20px;
+    }
+    
+    .frame-work img {
+        max-width: 80px;
+        max-height: 80px;
+    }
+}
+
+@media screen and (min-width: 749px) and (max-width: 1279px) {
+    .skills-container .content-mobile {
+        display: none;
+    }
+    
+    
+    .heading p {
+        max-width: 570px;
+        text-align: center;
+        font-family: IBM Plex Mono;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        /* 171.429% */
+        letter-spacing: 0.14px;
+        margin-top: 10px;
+    }
+    
+    .work { 
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        width: 892px;
+        height: 300px;
+        gap: 30px;
+        color: #fff ;
+        margin-top: 50px;
     }
     
     .work-info {
@@ -105,16 +174,26 @@
 
     .skills-container .content-mobile {
         width: 100%;
-        height: 787px;
+        height: 829px;
     }
 
     .work {
         width: 100%;
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
         color: #fff;
         padding: 20px;
         margin-top: 20px;
+    }
+
+    .work-info {
+        text-align: center;
+    }
+
+    .work-description {
+        text-align: center;
     }
 
     .frame-work {
