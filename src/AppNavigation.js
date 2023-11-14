@@ -17,11 +17,11 @@ import { faXmark } from "@fortawesome/free-solid-svg-icons";
 import { useAppState } from "./AppProvider";
 
 function AppNaviagation() {
-    const {curPage, updatePage} = useAppState();
+    const { curPage, updatePage } = useAppState();
     const [isClicked, setIsClicked] = useState(false);
     console.log(curPage);
     return (
-            <div className="container">
+        <div className="container">
             <div id="navbar-none-mobile" className="navbar">
                 <ul className="navbar--list">
                     <li><Link className="routes"
@@ -78,28 +78,40 @@ function AppNaviagation() {
                     <div className="dropdown">
                         <ul className="navbar--list">
                             <li><Link className="routes"
-                                onClick={() => { updatePage('Home') }}
+                                onClick={() => {
+                                    updatePage('Home');
+                                    setIsClicked(false);
+                                }}
                                 style={{
                                     textDecoration: curPage === 'Home' ? 'underline' : 'none',
                                     color: curPage === 'Home' ? '#fff' : '#9C9C9C',
                                     fontSize: curPage === 'Home' ? 18 : 14
                                 }} to="/">Home</Link></li>
                             <li><Link className="routes"
-                                onClick={() => { updatePage('Skills') }}
+                                onClick={() => {
+                                    updatePage('Skills');
+                                    setIsClicked(false);
+                                }}
                                 style={{
                                     textDecoration: curPage === 'Skills' ? 'underline' : 'none',
                                     color: curPage === 'Skills' ? '#fff' : '#9C9C9C',
                                     fontSize: curPage === 'Skills' ? 18 : 14
                                 }} to="/skill">Skills</Link></li>
                             <li><Link className="routes"
-                                onClick={() => { updatePage('Projects') }}
+                                onClick={() => {
+                                    updatePage('Projects');
+                                    setIsClicked(false);
+                                }}
                                 style={{
                                     textDecoration: curPage === 'Projects' ? 'underline' : 'none',
                                     color: curPage === 'Projects' ? '#fff' : '#9C9C9C',
                                     fontSize: curPage === 'Projects' ? 18 : 14
                                 }} to="/project">Projects</Link></li>
                             <li><Link className="routes"
-                                onClick={() => { updatePage('Contact') }}
+                                onClick={() => {
+                                    updatePage('Contact');
+                                    setIsClicked(false);
+                                }}
                                 style={{
                                     textDecoration: curPage === 'Contact' ? 'underline' : 'none',
                                     color: curPage === 'Contact' ? '#fff' : '#9C9C9C',
