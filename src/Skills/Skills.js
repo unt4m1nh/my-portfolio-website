@@ -82,6 +82,9 @@ function Skills() {
                     <h1>My Skills</h1>
                 </div>
                 <div className="work">
+                    <div className="work-img">
+                        <img src={web} alt="work-img"></img>
+                    </div>
                     <h2>Developing Website</h2>
                     <p className="work-description">
                         Manage to use various kind of frameworks for full-stack
@@ -94,7 +97,9 @@ function Skills() {
                     </div>
                 </div>
                 <div className="work">
-
+                    <div className="work-img">
+                        <img src={mobile} alt="work-img"></img>
+                    </div>
                     <h2>Developing mobile applications</h2>
                     <p className="work-description">
                         Developing Mobile Apps based on React Native / Android Java
@@ -106,7 +111,9 @@ function Skills() {
                     </div>
                 </div>
                 <div className="work">
-
+                    <div className="work-img">
+                        <img src={cpp} alt="work-img"></img>
+                    </div>
                     <h2>Designing database</h2>
                     <p className="work-description">
                         Design SQL / Non-SQL databases for storing users data.

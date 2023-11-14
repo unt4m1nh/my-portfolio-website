@@ -52,18 +52,21 @@
 
     .projects-container {
         padding: 0;
+        height: 100vh;
     }
 
     .projects-container .content {
         display: none;
+    }
+
+    .projects-container .content-mobile .heading {
+        margin-bottom: 1.5rem;
     }
     
     .projects-list {
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-top: 55px;
-        margin-bottom: 50px;
     }
     
     .rounded-button {
